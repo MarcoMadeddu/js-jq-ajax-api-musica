@@ -34,10 +34,9 @@ $(document).ready(function() {
 	})
 
 	// R I C E R C A  I N  B A S E  A L  G E N E R E //
-	var search = $(".button");
 	var select = $("#music-gen");
 
-	search.click(function(){
+	select.change(function(){
 		var selected = select.children("option:selected").val();
 		var cds = $(".cd");
 		cds.hide();
