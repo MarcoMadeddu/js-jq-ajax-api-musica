@@ -12,17 +12,21 @@
         <header>
             <div class="container">
                 <img src="logo.png" alt="logo" />
+                <label for="gen">Scegli un genere</label>
+                
+                <select name = "ei" id="music-gen">
+                    <option value="Rock">Rock</option>
+                    <option value="Jazz">Jazz</option>
+                    <option value="Pop">Pop</option>
+                    <option value="Metal">Metal</option>
+                </select>
+                <button class="button">Cerca Genere</button>
             </div>
         </header>
 
         <div class="cds-container container">
             <!-- Disco ad esempio -->
-            <div class="cd">
-                <img src="https://upload.wikimedia.org/wikipedia/en/9/9f/Ten_Summoner%27s_Tales.jpg" alt="">
-                <h3>Ten's Summoners Tales</h3>
-                <span class="author">Sting</span>
-                <span class="year">1993</span>
-            </div>
+           
         </div>
 
         <script id="template" type="text/x-handlebars-template">
@@ -32,7 +36,7 @@
                 <span class="author">{{author}}</span>
                 
                 <span class="year">{{year}}</span>
-                <span class="author">{{gen}}</span>
+                <span class="gen">{{gen}}</span>
             </div>
           </script>
         

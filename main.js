@@ -33,5 +33,25 @@ $(document).ready(function() {
 			
 		},
 	})
+
+	var search = $(".button");
+	var select = $("#music-gen");
+	var selected = select.children("option:selected").val();
+
+	search.click(function(){
+		var selected = select.children("option:selected").val();
+		var cds = $(".cd");
+		cds.hide();
+		
+		cds.each(function(){
+
+			if($(this).find(".gen").text() == selected){
+				$(this).show();
+			}
+		})
+		
+	})
+	
+	
 	
 });
